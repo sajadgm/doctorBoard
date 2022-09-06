@@ -1,9 +1,41 @@
 <div class="container">
 
-  <section>
-    <mat-card>
+  <header class="container__header">
+    <app-display-header-container></app-display-header-container>
+
+    <section class="container__header--doc-section">
       <mat-card>
-        <mat-card-title>لیست انتظار</mat-card-title>
+        <div>
+          <mat-card-title>دکتر : {{'محمد جهانی'}}</mat-card-title>
+          <mat-card-subtitle
+            style="display: flex; flex-direction: row; justify-content: space-between;margin-top: 0.2rem; font-size: 1.2rem;">
+            <div style="margin-top: 1rem;">
+              <p>تعداد افراد در انتظار : {{'15'}} نفر</p>
+              <p>
+                تا نفر بعدی : {{'08:23'}}
+              </p>
+            </div>
+            <div class="doc-profile">
+              <img src="/assets/dr1.png" alt="docProfile">
+            </div>
+          </mat-card-subtitle>
+        </div>
+
+      </mat-card>
+    </section>
+  </header>
+
+
+  <section class="container__queue">
+    <mat-card class="container__queue--card">
+      <h1>لیست انتطار</h1>
+      <div class="container__queue--card--caption">
+        <p>تعداد کل {{'15'}}</p>
+        <p>زمان برای هر نفر {{'12:00'}}</p>
+        <p>زمان باقی مانده تا نفر بعد {{'12:00'}}</p>
+      </div>
+      <mat-card class="container__queue--card--people">
+        <mat-card-title>آقای نظری</mat-card-title>
         <mat-card-subtitle
           style="display: flex; flex-direction: row; justify-content: space-between;margin-top: 0.2rem;">
           <p>تعداد افراد در انتظار : {{'15'}} نفر</p>

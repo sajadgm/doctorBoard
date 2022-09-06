@@ -1,0 +1,200 @@
+// // @use 'sass:map';
+// // @use 'colors';
+// // @use 'variables';
+
+@font-face {
+  font-family: iranyekan;
+  font-style: normal;
+  font-weight: 100;
+  src: url("./fonts/IRANYekanThinFaNum.ttf") format("truetype");
+}
+
+html,
+body {
+  height: 100%;
+}
+
+html {
+  font-size: 62.5%;
+  @media only screen and (min-width: 1370px) and (max-width: 1605px) {
+    /* STYLES GO HERE */
+    font-size: 62.5%;
+  }
+}
+
+body {
+  font-family: iranyekan !important;
+  overflow-x: hidden;
+  a {
+    text-decoration: none;
+    color: #00b199;
+    &:hover {
+      text-decoration: underline !important;
+    }
+  }
+}
+
+// @mixin height-4 {
+// 	.mat-form-field-appearance-outline .mat-form-field-flex {
+// 		height: 4rem;
+// 	}
+// 	.mat-form-field-appearance-outline .mat-form-field-flex {
+// 		height: 4rem;
+// 	}
+// 	.mat-form-field-appearance-outline .mat-form-field-infix {
+// 		padding: 0;
+// 		border-top: 0;
+// 	}
+// }
+
+// /* button {
+// 	background: none;
+// 	border: none;
+// 	border-style: none;
+// } */
+
+// .height-4 {
+// 	@include height-4();
+// }
+
+// .hidden {
+// 	display: none !important;
+// }
+
+// .ltr {
+// 	direction: ltr;
+// }
+
+// .mat-form-field-appearance-outline .mat-form-field-prefix {
+// 	right: 0.5rem;
+// }
+
+// .mat-tab-group,
+// .mat-checkbox-label,
+// .mat-option-text,
+// .mat-table,
+// .mat-tooltip {
+// 	font-family: variables.$primary-font-family !important;
+// }
+
+// .mat-dialog-container {
+// 	padding: 1.6rem !important;
+// }
+
+// .app-menu-icon {
+// 	vertical-align: middle;
+// }
+
+// // .mat-card {
+// // 	padding: 0 !important;
+// // 	border-radius: variables.$app-gutter-size !important;
+// // 	font-family: variables.$primary-font-family !important;
+// // }
+
+// .mat-drawer-container {
+// 	background-color: transparent !important;
+// }
+
+// // .mat-drawer-backdrop {
+// // 	border-radius: variables.$app-gutter-size !important;
+// // }
+
+// .mat-icon-button.cdk-program-focused {
+// 	.mat-button-focus-overlay {
+// 		opacity: 0 !important;
+// 	}
+// }
+
+// @mixin color($theme) {
+// 	$colors-map: colors.color($theme);
+// 	.iconHover {
+// 		fill: map.get($colors-map, 'primary');
+// 		transition: fill 0.3s;
+// 	}
+// 	.primary {
+// 		color: map.get($colors-map, 'primary');
+// 	}
+// 	.primary-400 {
+// 		color: map.get($colors-map, 'primary-400');
+// 	}
+// 	.primary-600 {
+// 		color: map.get($colors-map, 'primary-600');
+// 	}
+// 	.accent {
+// 		color: map.get($colors-map, 'accent');
+// 	}
+// 	.accent-600 {
+// 		color: map.get($colors-map, 'accent-600');
+// 	}
+// 	.accent-700 {
+// 		color: map.get($colors-map, 'accent-700');
+// 	}
+// 	.accent-400 {
+// 		color: map.get($colors-map, 'accent-400');
+// 	}
+// 	.accent-300 {
+// 		color: map.get($colors-map, 'accent-300');
+// 	}
+// 	.warn {
+// 		color: map.get($colors-map, 'warn');
+// 	}
+// 	.warn-600 {
+// 		color: map.get($colors-map, 'warn-600');
+// 	}
+// 	.warn-700 {
+// 		color: map.get($colors-map, 'warn-700');
+// 	}
+// 	.warn-400 {
+// 		color: map.get($colors-map, 'warn-400');
+// 	}
+// 	.warn-300 {
+// 		color: map.get($colors-map, 'warn-300');
+// 	}
+// 	.primary-bg {
+// 		background-color: map.get($colors-map, 'primary');
+// 	}
+// 	.accent-bg {
+// 		background-color: map.get($colors-map, 'accent');
+// 	}
+// 	.accent-bg-400 {
+// 		background-color: map.get($colors-map, 'accent-400');
+// 	}
+// 	.accent-bg-300 {
+// 		background-color: map.get($colors-map, 'accent-300');
+// 	}
+// 	.accent-bg-600 {
+// 		background-color: map.get($colors-map, 'accent-600');
+// 	}
+// 	.accent-bg-700 {
+// 		background-color: map.get($colors-map, 'accent-700');
+// 	}
+// 	.warn-bg {
+// 		background-color: map.get($colors-map, 'warn');
+// 	}
+// 	.warn-bg-400 {
+// 		background-color: map.get($colors-map, 'warn-400');
+// 	}
+// 	.warn-bg-300 {
+// 		background-color: map.get($colors-map, 'warn-300');
+// 	}
+// 	.warn-bg-600 {
+// 		background-color: map.get($colors-map, 'warn-600');
+// 	}
+// 	.warn-bg-700 {
+// 		background-color: map.get($colors-map, 'warn-700');
+// 	}
+// 	oms-icons {
+// 		// vertical-align: middle;
+// 		display: flex;
+// 		justify-content: center;
+// 	}
+// }
+
+// .simple-keyboard {
+// 	max-width: 850px;
+// 	min-width: 550px;
+// 	box-shadow: 0 5px 18px -3px #6e6e6e;
+// 	.active-button {
+// 		background: #cbcbcb;
+// 	}
+// }
