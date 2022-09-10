@@ -1,12 +1,22 @@
-// // @use 'sass:map';
-// // @use 'colors';
-// // @use 'variables';
-
 @font-face {
-  font-family: iranyekan;
+  font-family: "iranyekan";
   font-style: normal;
   font-weight: 100;
-  src: url("./fonts/IRANYekanThinFaNum.ttf") format("truetype");
+  src: url("../assets/Font/fonts/IRANYekanThinFaNum.ttf") format("truetype");
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+label,
+b,
+button {
+  font-family: "iranyekan" !important;
 }
 
 html,
@@ -23,11 +33,10 @@ html {
 }
 
 body {
-  font-family: iranyekan !important;
   overflow-x: hidden;
   a {
     text-decoration: none;
-    color: #00b199;
+    color: #0f00b1;
     &:hover {
       text-decoration: underline !important;
     }
