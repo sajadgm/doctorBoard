@@ -1,6 +1,9 @@
 mat-menu-item {
   direction: rtl !important;
 }
+.mat-card-title {
+  font-family: "iranyekan";
+}
 
 @media (max-width: 60rem) {
   .container {
@@ -75,6 +78,7 @@ mat-menu-item {
 .menu-buttons {
   direction: rtl;
   text-align: right;
+
   mat-icon {
     margin-right: 0;
   }

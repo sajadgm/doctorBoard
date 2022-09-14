@@ -6,8 +6,7 @@
   <main class="container__main">
 
     <div style="margin: 2rem 2rem;">
-
-      <button mat-raised-button color="primary" routerLink="/client/display/show">
+      <button mat-raised-button color="primary" (click)="onError()">
         برو به صف انتظار
       </button>
     </div>
@@ -54,7 +53,7 @@
       </mat-card>
     </section>
 
-    <section class="container__main--section">
+    <section *ngIf="tasks$ | async" class="container__main--section">
 
       <div class="menu">
         <span style="cursor: pointer;" mat-icon-button [matMenuTriggerFor]="clientMenu"
