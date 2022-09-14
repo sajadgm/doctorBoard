@@ -1,9 +1,10 @@
-@font-face {
-  font-family: "iranyekan";
-  font-style: normal;
-  font-weight: 100;
-  src: url("../assets/Font/fonts/IRANYekanThinFaNum.ttf") format("truetype");
-}
+// @font-face {
+//   font-family: "iranyekan";
+//   font-style: normal;
+//   font-weight: 100;
+//   src: url("../assets/Font/fonts/IRANYekanThinFaNum.ttf") format("truetype");
+// }
+@use "variables";
 
 p,
 h1,
@@ -16,7 +17,7 @@ a,
 label,
 b,
 button {
-  font-family: "iranyekan" !important;
+  font-family: variables.$primary-font-family !important;
 }
 
 html,
